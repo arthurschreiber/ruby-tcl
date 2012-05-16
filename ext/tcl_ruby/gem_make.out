@@ -1,0 +1,46 @@
+/home/jsanderson/.rvm/rubies/ruby-1.9.3-p194/bin/ruby extconf.rb 
+checking for main() in -ltcl8.5... yes
+creating Makefile
+
+make
+compiling tcl_ruby.c
+tcl_ruby.c: In function ‘rb_tcl_interp_send_begin’:
+tcl_ruby.c:23: error: ‘struct RArray’ has no member named ‘len’
+tcl_ruby.c:23: error: ‘struct RArray’ has no member named ‘ptr’
+tcl_ruby.c:28: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:28: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:28: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:28: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:28: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:28: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:28: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:28: warning: ISO C90 forbids mixed declarations and code
+tcl_ruby.c: In function ‘rb_tcl_interp_send_rescue’:
+tcl_ruby.c:39: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:39: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:39: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:39: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:39: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:39: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:39: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:39: warning: ISO C90 forbids mixed declarations and code
+tcl_ruby.c: In function ‘rb_tcl_interp_send’:
+tcl_ruby.c:61: warning: ISO C90 forbids mixed declarations and code
+tcl_ruby.c: In function ‘rb_tcl_interp_eval’:
+tcl_ruby.c:100: error: ‘struct RArray’ has no member named ‘len’
+tcl_ruby.c:107: warning: ISO C90 forbids mixed declarations and code
+tcl_ruby.c:122: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:122: warning: ISO C90 forbids mixed declarations and code
+tcl_ruby.c: In function ‘rb_tcl_interp_list_to_array’:
+tcl_ruby.c:153: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:153: warning: ISO C90 forbids mixed declarations and code
+tcl_ruby.c:156: warning: ISO C90 forbids mixed declarations and code
+tcl_ruby.c:167: warning: ISO C90 forbids mixed declarations and code
+tcl_ruby.c: In function ‘rb_tcl_interp_array_to_list’:
+tcl_ruby.c:187: error: ‘struct RArray’ has no member named ‘len’
+tcl_ruby.c:187: warning: ISO C90 forbids mixed declarations and code
+tcl_ruby.c:194: error: ‘struct RString’ has no member named ‘ptr’
+tcl_ruby.c:201: warning: ISO C90 forbids mixed declarations and code
+tcl_ruby.c: In function ‘Init_tcl_ruby’:
+tcl_ruby.c:220: warning: ISO C90 forbids mixed declarations and code
+make: *** [tcl_ruby.o] Error 1
