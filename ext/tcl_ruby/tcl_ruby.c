@@ -134,10 +134,10 @@ static VALUE rb_tcl_interp_eval(VALUE self, VALUE script) {
   
   switch (result) {
     case TCL_OK:
-      return rb_tainted_str_new2(tcl_interp->interp->result);
+      return rb_tainted_str_new2(Tcl_GetStringResult(tcl_interp->interp));
     case TCL_ERROR:
       if (NIL_P(tcl_interp->exit_exception)) {
-        rb_raise(error_class, "%s", tcl_interp->interp->result);
+        rb_raise(error_class, "%s", Tcl_GetStringResult(tcl_interp->interp));
       } else {
         rb_exit(NUM2INT(rb_iv_get(tcl_interp->exit_exception, "status")));
       }
